@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "44c9a96c-23ab-4b64-9fc1-189308b66b7e": {
+      "ProjectGuid": "44c9a96c-23ab-4b64-9fc1-189308b66b7e",
+      "DisplayName": "TurtlePleaseRun",
+      "ColorIndex": 0
+    },
+    "6c2ae90c-f448-43a5-be46-d0a4c20640d1": {
+      "ProjectGuid": "6c2ae90c-f448-43a5-be46-d0a4c20640d1",
+      "DisplayName": "TurtleGame",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

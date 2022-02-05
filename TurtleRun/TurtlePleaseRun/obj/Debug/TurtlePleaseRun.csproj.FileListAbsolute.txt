@@ -1,0 +1,11 @@
+C:\Users\Dark_Monk\Documents\Learning C#\TurtleRun\TurtlePleaseRun\bin\Debug\TurtlePleaseRun.exe.config
+C:\Users\Dark_Monk\Documents\Learning C#\TurtleRun\TurtlePleaseRun\bin\Debug\TurtlePleaseRun.exe
+C:\Users\Dark_Monk\Documents\Learning C#\TurtleRun\TurtlePleaseRun\bin\Debug\TurtlePleaseRun.pdb
+C:\Users\Dark_Monk\Documents\Learning C#\TurtleRun\TurtlePleaseRun\obj\Debug\TurtlePleaseRun.csproj.AssemblyReference.cache
+C:\Users\Dark_Monk\Documents\Learning C#\TurtleRun\TurtlePleaseRun\obj\Debug\TurtlePleaseRun.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dark_Monk\Documents\Learning C#\TurtleRun\TurtlePleaseRun\obj\Debug\TurtlePleaseRun.csproj.CoreCompileInputs.cache
+C:\Users\Dark_Monk\Documents\Learning C#\TurtleRun\TurtlePleaseRun\obj\Debug\TurtlePleaseRun.exe
+C:\Users\Dark_Monk\Documents\Learning C#\TurtleRun\TurtlePleaseRun\obj\Debug\TurtlePleaseRun.pdb
+C:\Users\Dark_Monk\Documents\Learning C#\TurtleRun\TurtlePleaseRun\bin\Debug\SmallBasicLibrary.dll
+C:\Users\Dark_Monk\Documents\Learning C#\TurtleRun\TurtlePleaseRun\bin\Debug\SmallBasicLibrary.xml
+C:\Users\Dark_Monk\Documents\Learning C#\TurtleRun\TurtlePleaseRun\obj\Debug\TurtlePleaseRun.csproj.CopyComplete

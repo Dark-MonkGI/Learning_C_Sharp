@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TurtleRun/1.0.0": {
+        "dependencies": {
+          "SmallBasicLibrary": "1.2.0.0"
+        },
+        "runtime": {
+          "TurtleRun.dll": {}
+        }
+      },
+      "SmallBasicLibrary/1.2.0.0": {
+        "runtime": {
+          "SmallBasicLibrary.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TurtleRun/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SmallBasicLibrary/1.2.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
