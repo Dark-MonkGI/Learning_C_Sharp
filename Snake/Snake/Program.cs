@@ -10,6 +10,19 @@ namespace Snake
     {
         static void Main(string[] args)
         {
+            Point OnePoint = new Point();
+            OnePoint.X = 1;
+            OnePoint.Y = 3;
+            OnePoint.symbol = '*';
+            OnePoint.Draw();
+
+          
+
+
+
+            Console.ReadLine();
+
         }
+        
     }
 }
