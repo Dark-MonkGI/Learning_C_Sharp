@@ -10,10 +10,18 @@ namespace Snake
     {
         static void Main(string[] args)
         {
+            Console.SetBufferSize( 120, 30);
+
+
+
             Point OnePoint = new Point(1, 3, '*');
             Count MyCount = new Count(2, 4, 5);
-            HorizontalLine Line = new HorizontalLine(5, 10, 6, '*');
-           
+
+            HorizontalLine HorizontalUPLine = new HorizontalLine(0, 118, 0, '-');
+            HorizontalLine HorizontalDownLine = new HorizontalLine(0, 118, 29, '-');
+            VerticalLine VerticalRaightLine = new VerticalLine(1, 28, 119, '|');
+            VerticalLine VerticalLeftLine = new VerticalLine(1, 28, 0, '|');
+            
 
             //OnePoint.X = 1;
             //OnePoint.Y = 3;
@@ -21,7 +29,15 @@ namespace Snake
 
             OnePoint.Drow();
             MyCount.NumCount();
-            Line.Drow();            
+
+            HorizontalUPLine.Drow();
+            HorizontalDownLine.Drow();
+            VerticalRaightLine.Drow();
+            VerticalLeftLine.Drow();
+
+
+            Snake snake = new Snake(p, 4, Derection.RIGHT);
+
             Console.ReadLine();
 
 
