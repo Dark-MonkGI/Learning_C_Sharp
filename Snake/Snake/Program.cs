@@ -35,8 +35,9 @@ namespace Snake
             VerticalRaightLine.Drow();
             VerticalLeftLine.Drow();
 
-
-            Snake snake = new Snake(p, 4, Derection.RIGHT);
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Drow();
 
             Console.ReadLine();
 
