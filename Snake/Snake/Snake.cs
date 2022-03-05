@@ -8,8 +8,11 @@ namespace Snake
 {
     internal class Snake : Figure
     {
-        public Snake(Point tail, int lenght, Direction direction)
+        Direction direction;
+        public Snake(Point tail, int lenght, Direction _direction)
         {
+            direction = _direction;
+
             Pipline = new List<Point>();
 
             for (int i = 0; i < lenght; i++)
@@ -21,5 +24,25 @@ namespace Snake
             }
         }
 
+        internal void Move()
+        {
+            Point tail = Pipline.First();
+            Pipline.Remove(tail);
+            Point head = GetNextPoint();
+            Pipline.Add(head);
+
+            tail.Clear();
+            head.Drow();
+
+        }
+        
+        public Point GetNextPoint()
+        {
+            Point head = Pipline.Last();
+            Point nextPoint = new Point( head );
+            nextPoint.Move(1, direction);
+            return nextPoint;
+
+        }
     }
 }
