@@ -59,7 +59,7 @@ namespace Snake
 
         public override string ToString()
         {
-            return x + ", " + y +", " + symbol;
+            return x + ", " + y + ", " + symbol;
         }
 
     }
