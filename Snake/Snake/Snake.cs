@@ -32,7 +32,7 @@ namespace Snake
             Pipline.Add(head);
 
             tail.Clear();
-            head.Drow();
+            head.Draw();
 
         }
         
@@ -42,7 +42,17 @@ namespace Snake
             Point nextPoint = new Point( head );
             nextPoint.Move(1, direction);
             return nextPoint;
+        }
 
+        internal bool IsHitTail()
+        {
+            var head = Pipline.Last();
+            for(int i = 0; i < Pipline.Count - 2; i++)
+            {
+                if ( head.IsHit(Pipline[i]) )
+                    return true;
+            }
+            return false;
         }
 
         public void HandleKey(ConsoleKey key)

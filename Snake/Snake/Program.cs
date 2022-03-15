@@ -14,15 +14,10 @@ namespace Snake
             Console.SetBufferSize( 120, 30);
 
             // Рамка
-            HorizontalLine HorizontalUPLine = new HorizontalLine(0, 118, 0, '-');
-            HorizontalLine HorizontalDownLine = new HorizontalLine(0, 118, 29, '-');
-            VerticalLine VerticalRaightLine = new VerticalLine(1, 28, 119, '|');
-            VerticalLine VerticalLeftLine = new VerticalLine(1, 28, 0, '|');
-            
-            HorizontalUPLine.Drow();
-            HorizontalDownLine.Drow();
-            VerticalRaightLine.Drow();
-            VerticalLeftLine.Drow();
+            Walls walls = new Walls(120, 30);
+            walls.Drow();
+
+
 
             // Змейка
             Point p = new Point(4, 5, '*');
@@ -31,15 +26,20 @@ namespace Snake
 
             FoodCreator foodCreator = new FoodCreator(120, 30, '$');
             Point food = foodCreator.CreateFood();
-            food.Drow();
+            food.Draw();
 
 
             while (true)
             {
+                if(walls.IsHit(snake) || snake.IsHitTail())
+                {
+                    break;
+                }
+
                 if (snake.Eat(food))
                 {
                     food = foodCreator.CreateFood();
-                    food.Drow();
+                    food.Draw();
                 }
                 else
                 {

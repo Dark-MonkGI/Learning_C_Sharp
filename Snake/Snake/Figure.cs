@@ -13,8 +13,31 @@ namespace Snake
         {
             foreach (Point Line in Pipline)
             {
-                Line.Drow();
+                Line.Draw();
             }
         }
+
+        internal bool IsHit( Figure figure)
+        {
+            foreach(var p in Pipline)
+            {
+                if(figure.IsHit(p))
+                    return true;
+            } 
+            return false;
+        }
+
+        private bool IsHit(Point point)
+        {
+            foreach (var p in Pipline)
+            {
+                if (p.IsHit(point))
+                    return true;
+            }
+            return false;
+        }
+
+
+
     }
 }

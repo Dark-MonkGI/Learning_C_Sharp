@@ -51,7 +51,7 @@ namespace Snake
         }
 
 
-        public void Drow()
+        public void Draw()
         {
             Console.SetCursorPosition(x, y);
             Console.Write(symbol);
@@ -59,7 +59,7 @@ namespace Snake
         public void Clear()
         {
             symbol = ' ';
-            Drow();
+            Draw();
         }
 
         public override string ToString()
