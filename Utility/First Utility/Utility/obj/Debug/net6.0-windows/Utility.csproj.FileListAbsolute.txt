@@ -1,0 +1,17 @@
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\bin\Debug\net6.0-windows\Utility.exe
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\bin\Debug\net6.0-windows\Utility.deps.json
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\bin\Debug\net6.0-windows\Utility.runtimeconfig.json
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\bin\Debug\net6.0-windows\Utility.dll
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\bin\Debug\net6.0-windows\Utility.pdb
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\obj\Debug\net6.0-windows\Utility.csproj.AssemblyReference.cache
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\obj\Debug\net6.0-windows\Utility.csproj.GenerateResource.cache
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\obj\Debug\net6.0-windows\Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\obj\Debug\net6.0-windows\Utility.AssemblyInfoInputs.cache
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\obj\Debug\net6.0-windows\Utility.AssemblyInfo.cs
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\obj\Debug\net6.0-windows\Utility.csproj.CoreCompileInputs.cache
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\obj\Debug\net6.0-windows\Utility.dll
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\obj\Debug\net6.0-windows\refint\Utility.dll
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\obj\Debug\net6.0-windows\Utility.pdb
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\obj\Debug\net6.0-windows\Utility.genruntimeconfig.cache
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\obj\Debug\net6.0-windows\ref\Utility.dll
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\Utility\First Utility\Utility\obj\Debug\net6.0-windows\Utility.MainForm.resources
