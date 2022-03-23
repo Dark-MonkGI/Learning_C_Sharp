@@ -48,6 +48,37 @@ namespace Utility
             int number;
             number = rnd.Next(Convert.ToInt32(numericUpDown1.Value), Convert.ToInt32(numericUpDown2.Value)+1);
             lblRandom.Text = number.ToString();
+
+            if (cbRandom.Checked)
+            {
+                int i = 0;
+
+                while (txtRandom.Text.IndexOf(number.ToString()) != -1)
+                {
+                    number = rnd.Next(Convert.ToInt32(numericUpDown1.Value), Convert.ToInt32(numericUpDown2.Value) + 1);
+                    i++;
+                    if (i > 1000) break; 
+                }
+                if (i <= 1000)
+                {
+                    txtRandom.AppendText(number.ToString() + " \r\n");
+                    lblRandom.Text = number.ToString();
+                }             
+                
+            }
+            else
+                txtRandom.AppendText(number.ToString() + " \r\n");
+        }
+
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+            txtRandom.Clear();
+            lblRandom.Text = "Null";
+        }
+
+        private void btnRandomCopy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(txtRandom.Text);
         }
     }
 }
