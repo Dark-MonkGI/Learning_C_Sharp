@@ -40,6 +40,12 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.GeneratePass = new System.Windows.Forms.TabPage();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.btnCreatePassword = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.nudPassLength = new System.Windows.Forms.NumericUpDown();
+            this.clbPassword = new System.Windows.Forms.CheckedListBox();
             this.tpNotebook = new System.Windows.Forms.TabPage();
             this.rtbNotebook = new System.Windows.Forms.RichTextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -60,6 +66,8 @@
             this.btnRandom = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.GeneratePass.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPassLength)).BeginInit();
             this.tpNotebook.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.NameHead.SuspendLayout();
@@ -164,12 +172,90 @@
             this.tabControl1.Controls.Add(this.tpNotebook);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.NameHead);
+            this.tabControl1.Controls.Add(this.GeneratePass);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 28);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(619, 422);
             this.tabControl1.TabIndex = 1;
+            // 
+            // GeneratePass
+            // 
+            this.GeneratePass.Controls.Add(this.tbPassword);
+            this.GeneratePass.Controls.Add(this.btnCreatePassword);
+            this.GeneratePass.Controls.Add(this.label1);
+            this.GeneratePass.Controls.Add(this.nudPassLength);
+            this.GeneratePass.Controls.Add(this.clbPassword);
+            this.GeneratePass.Location = new System.Drawing.Point(4, 29);
+            this.GeneratePass.Name = "GeneratePass";
+            this.GeneratePass.Size = new System.Drawing.Size(611, 389);
+            this.GeneratePass.TabIndex = 3;
+            this.GeneratePass.Text = "GeneratePass";
+            this.GeneratePass.UseVisualStyleBackColor = true;
+            // 
+            // tbPassword
+            // 
+            this.tbPassword.Location = new System.Drawing.Point(392, 142);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(170, 27);
+            this.tbPassword.TabIndex = 4;
+            // 
+            // btnCreatePassword
+            // 
+            this.btnCreatePassword.Font = new System.Drawing.Font("Nirmala UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnCreatePassword.Location = new System.Drawing.Point(392, 18);
+            this.btnCreatePassword.Name = "btnCreatePassword";
+            this.btnCreatePassword.Size = new System.Drawing.Size(170, 53);
+            this.btnCreatePassword.TabIndex = 3;
+            this.btnCreatePassword.Text = "Create a password";
+            this.btnCreatePassword.UseVisualStyleBackColor = true;
+            this.btnCreatePassword.Click += new System.EventHandler(this.btnCreatePassword_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 122);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Password length";
+            // 
+            // nudPassLength
+            // 
+            this.nudPassLength.Location = new System.Drawing.Point(22, 155);
+            this.nudPassLength.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.nudPassLength.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudPassLength.Name = "nudPassLength";
+            this.nudPassLength.Size = new System.Drawing.Size(150, 27);
+            this.nudPassLength.TabIndex = 1;
+            this.nudPassLength.Value = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            // 
+            // clbPassword
+            // 
+            this.clbPassword.CheckOnClick = true;
+            this.clbPassword.FormattingEnabled = true;
+            this.clbPassword.Items.AddRange(new object[] {
+            "Numbers",
+            "Uppercase",
+            "lower case",
+            "Special symbols"});
+            this.clbPassword.Location = new System.Drawing.Point(22, 18);
+            this.clbPassword.Name = "clbPassword";
+            this.clbPassword.Size = new System.Drawing.Size(150, 92);
+            this.clbPassword.TabIndex = 0;
             // 
             // tpNotebook
             // 
@@ -383,6 +469,8 @@
             this.ClientSize = new System.Drawing.Size(619, 450);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "My Utility";
@@ -390,6 +478,9 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.GeneratePass.ResumeLayout(false);
+            this.GeneratePass.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPassLength)).EndInit();
             this.tpNotebook.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -434,5 +525,11 @@
         private ToolStripMenuItem tsmiDownload;
         private TabPage tpNotebook;
         private RichTextBox rtbNotebook;
+        private TabPage GeneratePass;
+        private CheckedListBox clbPassword;
+        private TextBox tbPassword;
+        private Button btnCreatePassword;
+        private Label label1;
+        private NumericUpDown nudPassLength;
     }
 }

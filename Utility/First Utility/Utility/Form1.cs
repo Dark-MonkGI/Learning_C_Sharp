@@ -4,6 +4,7 @@ namespace Utility
     {
         int count = 0;
         Random rnd;
+        char[] special_chars = new char[] {'%','*',')','?', '#','$', '^', '&', '~'};
 
         public MainForm()
         {
@@ -124,6 +125,39 @@ namespace Utility
         private void MainForm_Load(object sender, EventArgs e)
         {
             LoadNotepad();
+            clbPassword.SetItemChecked(0, true);
+            clbPassword.SetItemChecked(1, true);
+            clbPassword.SetItemChecked(2, true);
+            clbPassword.SetItemChecked(3, true);
+        }
+
+        private void btnCreatePassword_Click(object sender, EventArgs e)
+        {
+            if (clbPassword.CheckedItems.Count == 0) return;
+            string password = "";
+
+            for(int i = 0; i < nudPassLength.Value; i++)
+            {
+                int NumberElements = rnd.Next(0, clbPassword.CheckedItems.Count);
+                string NameElements = clbPassword.CheckedItems[NumberElements].ToString();
+                switch (NameElements)
+                {
+                    case "Numbers": password+= rnd.Next(10).ToString();
+                        break;
+                    case "Uppercase": password += Convert.ToChar(rnd.Next(65,88));
+                        break;
+                    case "lower case":
+                        password += Convert.ToChar(rnd.Next(97, 122));
+                        break;
+                    default:
+                        password += special_chars[rnd.Next(special_chars.Length)];
+                        break;
+                }
+
+                tbPassword.Text = password;
+
+                Clipboard.SetText(password);
+            }
         }
     }
 }
