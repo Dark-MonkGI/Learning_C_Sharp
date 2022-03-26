@@ -31,9 +31,17 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.noteBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAddDate = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAddTime = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiDownload = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tpNotebook = new System.Windows.Forms.TabPage();
+            this.rtbNotebook = new System.Windows.Forms.RichTextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lblCount = new System.Windows.Forms.Label();
             this.btnMinus = new System.Windows.Forms.Button();
@@ -50,21 +58,13 @@
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnRandom = new System.Windows.Forms.Button();
-            this.tpNotebook = new System.Windows.Forms.TabPage();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.noteBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiAddDate = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiAddTime = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsmiSave = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiDownload = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tpNotebook.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.NameHead.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.tpNotebook.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -95,6 +95,55 @@
             this.tsmiExit.Text = "Exit";
             this.tsmiExit.Click += new System.EventHandler(this.tsmiExit_Click);
             // 
+            // noteBookToolStripMenuItem
+            // 
+            this.noteBookToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiAddDate,
+            this.tsmiAddTime,
+            this.toolStripMenuItem1,
+            this.tsmiSave,
+            this.tsmiDownload});
+            this.noteBookToolStripMenuItem.Name = "noteBookToolStripMenuItem";
+            this.noteBookToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.noteBookToolStripMenuItem.Text = "NoteBook";
+            // 
+            // tsmiAddDate
+            // 
+            this.tsmiAddDate.Name = "tsmiAddDate";
+            this.tsmiAddDate.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.tsmiAddDate.Size = new System.Drawing.Size(224, 26);
+            this.tsmiAddDate.Text = "Add Date";
+            this.tsmiAddDate.Click += new System.EventHandler(this.tsmiAddDate_Click);
+            // 
+            // tsmiAddTime
+            // 
+            this.tsmiAddTime.Name = "tsmiAddTime";
+            this.tsmiAddTime.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
+            this.tsmiAddTime.Size = new System.Drawing.Size(224, 26);
+            this.tsmiAddTime.Text = "Add Time";
+            this.tsmiAddTime.Click += new System.EventHandler(this.tsmiAddTime_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 6);
+            // 
+            // tsmiSave
+            // 
+            this.tsmiSave.Name = "tsmiSave";
+            this.tsmiSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.tsmiSave.Size = new System.Drawing.Size(224, 26);
+            this.tsmiSave.Text = "Save";
+            this.tsmiSave.Click += new System.EventHandler(this.tsmiSave_Click);
+            // 
+            // tsmiDownload
+            // 
+            this.tsmiDownload.Name = "tsmiDownload";
+            this.tsmiDownload.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.tsmiDownload.Size = new System.Drawing.Size(224, 26);
+            this.tsmiDownload.Text = "Download";
+            this.tsmiDownload.Click += new System.EventHandler(this.tsmiDownload_Click);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -121,6 +170,25 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(619, 422);
             this.tabControl1.TabIndex = 1;
+            // 
+            // tpNotebook
+            // 
+            this.tpNotebook.Controls.Add(this.rtbNotebook);
+            this.tpNotebook.Location = new System.Drawing.Point(4, 29);
+            this.tpNotebook.Name = "tpNotebook";
+            this.tpNotebook.Size = new System.Drawing.Size(611, 389);
+            this.tpNotebook.TabIndex = 2;
+            this.tpNotebook.Text = "Notebook";
+            this.tpNotebook.UseVisualStyleBackColor = true;
+            // 
+            // rtbNotebook
+            // 
+            this.rtbNotebook.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbNotebook.Location = new System.Drawing.Point(0, 0);
+            this.rtbNotebook.Name = "rtbNotebook";
+            this.rtbNotebook.Size = new System.Drawing.Size(611, 389);
+            this.rtbNotebook.TabIndex = 0;
+            this.rtbNotebook.Text = "";
             // 
             // tabPage1
             // 
@@ -308,70 +376,6 @@
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
             // 
-            // tpNotebook
-            // 
-            this.tpNotebook.Controls.Add(this.richTextBox1);
-            this.tpNotebook.Location = new System.Drawing.Point(4, 29);
-            this.tpNotebook.Name = "tpNotebook";
-            this.tpNotebook.Size = new System.Drawing.Size(611, 389);
-            this.tpNotebook.TabIndex = 2;
-            this.tpNotebook.Text = "Notebook";
-            this.tpNotebook.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(611, 389);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            // 
-            // noteBookToolStripMenuItem
-            // 
-            this.noteBookToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiAddDate,
-            this.tsmiAddTime,
-            this.toolStripMenuItem1,
-            this.tsmiSave,
-            this.tsmiDownload});
-            this.noteBookToolStripMenuItem.Name = "noteBookToolStripMenuItem";
-            this.noteBookToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
-            this.noteBookToolStripMenuItem.Text = "NoteBook";
-            // 
-            // tsmiAddDate
-            // 
-            this.tsmiAddDate.Name = "tsmiAddDate";
-            this.tsmiAddDate.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.tsmiAddDate.Size = new System.Drawing.Size(224, 26);
-            this.tsmiAddDate.Text = "Add Date";
-            // 
-            // tsmiAddTime
-            // 
-            this.tsmiAddTime.Name = "tsmiAddTime";
-            this.tsmiAddTime.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.tsmiAddTime.Size = new System.Drawing.Size(224, 26);
-            this.tsmiAddTime.Text = "Add Time";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 6);
-            // 
-            // tsmiSave
-            // 
-            this.tsmiSave.Name = "tsmiSave";
-            this.tsmiSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.tsmiSave.Size = new System.Drawing.Size(224, 26);
-            this.tsmiSave.Text = "Save";
-            // 
-            // tsmiDownload
-            // 
-            this.tsmiDownload.Name = "tsmiDownload";
-            this.tsmiDownload.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.tsmiDownload.Size = new System.Drawing.Size(224, 26);
-            this.tsmiDownload.Text = "Download";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -385,13 +389,13 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.tpNotebook.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.NameHead.ResumeLayout(false);
             this.NameHead.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.tpNotebook.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -428,6 +432,6 @@
         private ToolStripMenuItem tsmiSave;
         private ToolStripMenuItem tsmiDownload;
         private TabPage tpNotebook;
-        private RichTextBox richTextBox1;
+        private RichTextBox rtbNotebook;
     }
 }

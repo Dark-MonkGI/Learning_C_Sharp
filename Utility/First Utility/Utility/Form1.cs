@@ -80,5 +80,25 @@ namespace Utility
         {
             Clipboard.SetText(txtRandom.Text);
         }
+
+        private void tsmiAddDate_Click(object sender, EventArgs e)
+        {
+            rtbNotebook.AppendText(DateTime.Now.ToShortDateString() + "\r\n");
+        }
+
+        private void tsmiAddTime_Click(object sender, EventArgs e)
+        {
+            rtbNotebook.AppendText(DateTime.Now.ToShortTimeString() + "\r\n");
+        }
+
+        private void tsmiSave_Click(object sender, EventArgs e)
+        {
+            rtbNotebook.SaveFile("notepad.rtf");
+        }
+
+        private void tsmiDownload_Click(object sender, EventArgs e)
+        {
+            rtbNotebook.LoadFile("notepad.rtf");
+        }
     }
 }
