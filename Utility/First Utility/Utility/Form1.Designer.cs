@@ -34,6 +34,11 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lblCount = new System.Windows.Forms.Label();
+            this.btnMinus = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnPlus = new System.Windows.Forms.Button();
             this.NameHead = new System.Windows.Forms.TabPage();
             this.cbRandom = new System.Windows.Forms.CheckBox();
             this.btnRandomCopy = new System.Windows.Forms.Button();
@@ -45,17 +50,21 @@
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnRandom = new System.Windows.Forms.Button();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.lblCount = new System.Windows.Forms.Label();
-            this.btnMinus = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnPlus = new System.Windows.Forms.Button();
+            this.tpNotebook = new System.Windows.Forms.TabPage();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.noteBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAddDate = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAddTime = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiDownload = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.NameHead.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.tpNotebook.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -63,6 +72,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
+            this.noteBookToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -102,6 +112,7 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Controls.Add(this.tpNotebook);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.NameHead);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -110,6 +121,63 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(619, 422);
             this.tabControl1.TabIndex = 1;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.lblCount);
+            this.tabPage1.Controls.Add(this.btnMinus);
+            this.tabPage1.Controls.Add(this.btnReset);
+            this.tabPage1.Controls.Add(this.btnPlus);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(611, 389);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Counter";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // lblCount
+            // 
+            this.lblCount.AutoSize = true;
+            this.lblCount.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblCount.Location = new System.Drawing.Point(285, 216);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(24, 28);
+            this.lblCount.TabIndex = 3;
+            this.lblCount.Text = "0";
+            // 
+            // btnMinus
+            // 
+            this.btnMinus.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnMinus.Location = new System.Drawing.Point(413, 68);
+            this.btnMinus.Name = "btnMinus";
+            this.btnMinus.Size = new System.Drawing.Size(152, 55);
+            this.btnMinus.TabIndex = 2;
+            this.btnMinus.Text = "-";
+            this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnReset.Location = new System.Drawing.Point(222, 68);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(152, 55);
+            this.btnReset.TabIndex = 1;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // btnPlus
+            // 
+            this.btnPlus.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnPlus.Location = new System.Drawing.Point(33, 68);
+            this.btnPlus.Name = "btnPlus";
+            this.btnPlus.Size = new System.Drawing.Size(152, 55);
+            this.btnPlus.TabIndex = 0;
+            this.btnPlus.Text = "+";
+            this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // NameHead
             // 
@@ -240,62 +308,69 @@
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
             // 
-            // tabPage1
+            // tpNotebook
             // 
-            this.tabPage1.Controls.Add(this.lblCount);
-            this.tabPage1.Controls.Add(this.btnMinus);
-            this.tabPage1.Controls.Add(this.btnReset);
-            this.tabPage1.Controls.Add(this.btnPlus);
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(611, 389);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Counter";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tpNotebook.Controls.Add(this.richTextBox1);
+            this.tpNotebook.Location = new System.Drawing.Point(4, 29);
+            this.tpNotebook.Name = "tpNotebook";
+            this.tpNotebook.Size = new System.Drawing.Size(611, 389);
+            this.tpNotebook.TabIndex = 2;
+            this.tpNotebook.Text = "Notebook";
+            this.tpNotebook.UseVisualStyleBackColor = true;
             // 
-            // lblCount
+            // richTextBox1
             // 
-            this.lblCount.AutoSize = true;
-            this.lblCount.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblCount.Location = new System.Drawing.Point(285, 216);
-            this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(24, 28);
-            this.lblCount.TabIndex = 3;
-            this.lblCount.Text = "0";
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(611, 389);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
             // 
-            // btnMinus
+            // noteBookToolStripMenuItem
             // 
-            this.btnMinus.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnMinus.Location = new System.Drawing.Point(413, 68);
-            this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(152, 55);
-            this.btnMinus.TabIndex = 2;
-            this.btnMinus.Text = "-";
-            this.btnMinus.UseVisualStyleBackColor = true;
-            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
+            this.noteBookToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiAddDate,
+            this.tsmiAddTime,
+            this.toolStripMenuItem1,
+            this.tsmiSave,
+            this.tsmiDownload});
+            this.noteBookToolStripMenuItem.Name = "noteBookToolStripMenuItem";
+            this.noteBookToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.noteBookToolStripMenuItem.Text = "NoteBook";
             // 
-            // btnReset
+            // tsmiAddDate
             // 
-            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnReset.Location = new System.Drawing.Point(222, 68);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(152, 55);
-            this.btnReset.TabIndex = 1;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.tsmiAddDate.Name = "tsmiAddDate";
+            this.tsmiAddDate.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.tsmiAddDate.Size = new System.Drawing.Size(224, 26);
+            this.tsmiAddDate.Text = "Add Date";
             // 
-            // btnPlus
+            // tsmiAddTime
             // 
-            this.btnPlus.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnPlus.Location = new System.Drawing.Point(33, 68);
-            this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(152, 55);
-            this.btnPlus.TabIndex = 0;
-            this.btnPlus.Text = "+";
-            this.btnPlus.UseVisualStyleBackColor = true;
-            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
+            this.tsmiAddTime.Name = "tsmiAddTime";
+            this.tsmiAddTime.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
+            this.tsmiAddTime.Size = new System.Drawing.Size(224, 26);
+            this.tsmiAddTime.Text = "Add Time";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 6);
+            // 
+            // tsmiSave
+            // 
+            this.tsmiSave.Name = "tsmiSave";
+            this.tsmiSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.tsmiSave.Size = new System.Drawing.Size(224, 26);
+            this.tsmiSave.Text = "Save";
+            // 
+            // tsmiDownload
+            // 
+            this.tsmiDownload.Name = "tsmiDownload";
+            this.tsmiDownload.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.tsmiDownload.Size = new System.Drawing.Size(224, 26);
+            this.tsmiDownload.Text = "Download";
             // 
             // MainForm
             // 
@@ -310,12 +385,13 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.NameHead.ResumeLayout(false);
             this.NameHead.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tpNotebook.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,5 +421,13 @@
         private Button btnClean;
         private Button btnRandomCopy;
         private CheckBox cbRandom;
+        private ToolStripMenuItem noteBookToolStripMenuItem;
+        private ToolStripMenuItem tsmiAddDate;
+        private ToolStripMenuItem tsmiAddTime;
+        private ToolStripSeparator toolStripMenuItem1;
+        private ToolStripMenuItem tsmiSave;
+        private ToolStripMenuItem tsmiDownload;
+        private TabPage tpNotebook;
+        private RichTextBox richTextBox1;
     }
 }
