@@ -40,7 +40,10 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tpConverter = new System.Windows.Forms.TabPage();
+            this.lbMeasure = new System.Windows.Forms.Label();
+            this.cbMetric = new System.Windows.Forms.ComboBox();
+            this.btnSwap = new System.Windows.Forms.Button();
             this.tbTo = new System.Windows.Forms.TextBox();
             this.tbFrom = new System.Windows.Forms.TextBox();
             this.btnConvert = new System.Windows.Forms.Button();
@@ -48,12 +51,12 @@
             this.cbFrom = new System.Windows.Forms.ComboBox();
             this.tpNotebook = new System.Windows.Forms.TabPage();
             this.rtbNotebook = new System.Windows.Forms.RichTextBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tpCounter = new System.Windows.Forms.TabPage();
             this.lblCount = new System.Windows.Forms.Label();
             this.btnMinus = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnPlus = new System.Windows.Forms.Button();
-            this.NameHead = new System.Windows.Forms.TabPage();
+            this.tpRandom = new System.Windows.Forms.TabPage();
             this.cbRandom = new System.Windows.Forms.CheckBox();
             this.btnRandomCopy = new System.Windows.Forms.Button();
             this.btnClean = new System.Windows.Forms.Button();
@@ -64,7 +67,7 @@
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnRandom = new System.Windows.Forms.Button();
-            this.GeneratePass = new System.Windows.Forms.TabPage();
+            this.tpGeneratePass = new System.Windows.Forms.TabPage();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.btnCreatePassword = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -72,13 +75,13 @@
             this.clbPassword = new System.Windows.Forms.CheckedListBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.tpConverter.SuspendLayout();
             this.tpNotebook.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.NameHead.SuspendLayout();
+            this.tpCounter.SuspendLayout();
+            this.tpRandom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.GeneratePass.SuspendLayout();
+            this.tpGeneratePass.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPassLength)).BeginInit();
             this.SuspendLayout();
             // 
@@ -176,11 +179,11 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tpNotebook);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.NameHead);
-            this.tabControl1.Controls.Add(this.GeneratePass);
+            this.tabControl1.Controls.Add(this.tpCounter);
+            this.tabControl1.Controls.Add(this.tpRandom);
+            this.tabControl1.Controls.Add(this.tpGeneratePass);
+            this.tabControl1.Controls.Add(this.tpConverter);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 28);
             this.tabControl1.Name = "tabControl1";
@@ -188,23 +191,58 @@
             this.tabControl1.Size = new System.Drawing.Size(619, 422);
             this.tabControl1.TabIndex = 1;
             // 
-            // tabPage2
+            // tpConverter
             // 
-            this.tabPage2.Controls.Add(this.tbTo);
-            this.tabPage2.Controls.Add(this.tbFrom);
-            this.tabPage2.Controls.Add(this.btnConvert);
-            this.tabPage2.Controls.Add(this.cbTo);
-            this.tabPage2.Controls.Add(this.cbFrom);
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(611, 389);
-            this.tabPage2.TabIndex = 4;
-            this.tabPage2.Text = "Converter";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tpConverter.Controls.Add(this.lbMeasure);
+            this.tpConverter.Controls.Add(this.cbMetric);
+            this.tpConverter.Controls.Add(this.btnSwap);
+            this.tpConverter.Controls.Add(this.tbTo);
+            this.tpConverter.Controls.Add(this.tbFrom);
+            this.tpConverter.Controls.Add(this.btnConvert);
+            this.tpConverter.Controls.Add(this.cbTo);
+            this.tpConverter.Controls.Add(this.cbFrom);
+            this.tpConverter.Location = new System.Drawing.Point(4, 29);
+            this.tpConverter.Name = "tpConverter";
+            this.tpConverter.Size = new System.Drawing.Size(611, 389);
+            this.tpConverter.TabIndex = 4;
+            this.tpConverter.Text = "Converter";
+            this.tpConverter.UseVisualStyleBackColor = true;
+            // 
+            // lbMeasure
+            // 
+            this.lbMeasure.AutoSize = true;
+            this.lbMeasure.Location = new System.Drawing.Point(26, 26);
+            this.lbMeasure.Name = "lbMeasure";
+            this.lbMeasure.Size = new System.Drawing.Size(68, 20);
+            this.lbMeasure.TabIndex = 7;
+            this.lbMeasure.Text = "Measure:";
+            // 
+            // cbMetric
+            // 
+            this.cbMetric.FormattingEnabled = true;
+            this.cbMetric.Items.AddRange(new object[] {
+            "Length",
+            "Weight"});
+            this.cbMetric.Location = new System.Drawing.Point(26, 49);
+            this.cbMetric.Name = "cbMetric";
+            this.cbMetric.Size = new System.Drawing.Size(151, 28);
+            this.cbMetric.TabIndex = 6;
+            this.cbMetric.Text = "Length";
+            this.cbMetric.SelectedIndexChanged += new System.EventHandler(this.cbMetric_SelectedIndexChanged);
+            // 
+            // btnSwap
+            // 
+            this.btnSwap.Location = new System.Drawing.Point(252, 136);
+            this.btnSwap.Name = "btnSwap";
+            this.btnSwap.Size = new System.Drawing.Size(121, 49);
+            this.btnSwap.TabIndex = 5;
+            this.btnSwap.Text = "<-->";
+            this.btnSwap.UseVisualStyleBackColor = true;
+            this.btnSwap.Click += new System.EventHandler(this.btnSwap_Click);
             // 
             // tbTo
             // 
-            this.tbTo.Location = new System.Drawing.Point(456, 180);
+            this.tbTo.Location = new System.Drawing.Point(456, 270);
             this.tbTo.Name = "tbTo";
             this.tbTo.ReadOnly = true;
             this.tbTo.Size = new System.Drawing.Size(125, 27);
@@ -212,7 +250,7 @@
             // 
             // tbFrom
             // 
-            this.tbFrom.Location = new System.Drawing.Point(26, 180);
+            this.tbFrom.Location = new System.Drawing.Point(26, 270);
             this.tbFrom.Name = "tbFrom";
             this.tbFrom.Size = new System.Drawing.Size(125, 27);
             this.tbFrom.TabIndex = 3;
@@ -221,7 +259,7 @@
             // btnConvert
             // 
             this.btnConvert.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnConvert.Location = new System.Drawing.Point(252, 99);
+            this.btnConvert.Location = new System.Drawing.Point(252, 248);
             this.btnConvert.Name = "btnConvert";
             this.btnConvert.Size = new System.Drawing.Size(121, 49);
             this.btnConvert.TabIndex = 2;
@@ -239,7 +277,7 @@
             "m",
             "km",
             "mile"});
-            this.cbTo.Location = new System.Drawing.Point(430, 45);
+            this.cbTo.Location = new System.Drawing.Point(430, 147);
             this.cbTo.Name = "cbTo";
             this.cbTo.Size = new System.Drawing.Size(151, 28);
             this.cbTo.TabIndex = 1;
@@ -255,7 +293,7 @@
             "m",
             "km",
             "mile"});
-            this.cbFrom.Location = new System.Drawing.Point(26, 45);
+            this.cbFrom.Location = new System.Drawing.Point(26, 147);
             this.cbFrom.Name = "cbFrom";
             this.cbFrom.Size = new System.Drawing.Size(151, 28);
             this.cbFrom.TabIndex = 0;
@@ -280,19 +318,19 @@
             this.rtbNotebook.TabIndex = 0;
             this.rtbNotebook.Text = "";
             // 
-            // tabPage1
+            // tpCounter
             // 
-            this.tabPage1.Controls.Add(this.lblCount);
-            this.tabPage1.Controls.Add(this.btnMinus);
-            this.tabPage1.Controls.Add(this.btnReset);
-            this.tabPage1.Controls.Add(this.btnPlus);
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(611, 389);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Counter";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tpCounter.Controls.Add(this.lblCount);
+            this.tpCounter.Controls.Add(this.btnMinus);
+            this.tpCounter.Controls.Add(this.btnReset);
+            this.tpCounter.Controls.Add(this.btnPlus);
+            this.tpCounter.Location = new System.Drawing.Point(4, 29);
+            this.tpCounter.Name = "tpCounter";
+            this.tpCounter.Padding = new System.Windows.Forms.Padding(3);
+            this.tpCounter.Size = new System.Drawing.Size(611, 389);
+            this.tpCounter.TabIndex = 0;
+            this.tpCounter.Text = "Counter";
+            this.tpCounter.UseVisualStyleBackColor = true;
             // 
             // lblCount
             // 
@@ -337,26 +375,26 @@
             this.btnPlus.UseVisualStyleBackColor = true;
             this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
-            // NameHead
+            // tpRandom
             // 
-            this.NameHead.Controls.Add(this.cbRandom);
-            this.NameHead.Controls.Add(this.btnRandomCopy);
-            this.NameHead.Controls.Add(this.btnClean);
-            this.NameHead.Controls.Add(this.txtRandom);
-            this.NameHead.Controls.Add(this.lblTo);
-            this.NameHead.Controls.Add(this.lblFrom);
-            this.NameHead.Controls.Add(this.lblRandom);
-            this.NameHead.Controls.Add(this.numericUpDown2);
-            this.NameHead.Controls.Add(this.numericUpDown1);
-            this.NameHead.Controls.Add(this.btnRandom);
-            this.NameHead.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.NameHead.Location = new System.Drawing.Point(4, 29);
-            this.NameHead.Name = "NameHead";
-            this.NameHead.Padding = new System.Windows.Forms.Padding(3);
-            this.NameHead.Size = new System.Drawing.Size(611, 389);
-            this.NameHead.TabIndex = 1;
-            this.NameHead.Text = "Random";
-            this.NameHead.UseVisualStyleBackColor = true;
+            this.tpRandom.Controls.Add(this.cbRandom);
+            this.tpRandom.Controls.Add(this.btnRandomCopy);
+            this.tpRandom.Controls.Add(this.btnClean);
+            this.tpRandom.Controls.Add(this.txtRandom);
+            this.tpRandom.Controls.Add(this.lblTo);
+            this.tpRandom.Controls.Add(this.lblFrom);
+            this.tpRandom.Controls.Add(this.lblRandom);
+            this.tpRandom.Controls.Add(this.numericUpDown2);
+            this.tpRandom.Controls.Add(this.numericUpDown1);
+            this.tpRandom.Controls.Add(this.btnRandom);
+            this.tpRandom.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tpRandom.Location = new System.Drawing.Point(4, 29);
+            this.tpRandom.Name = "tpRandom";
+            this.tpRandom.Padding = new System.Windows.Forms.Padding(3);
+            this.tpRandom.Size = new System.Drawing.Size(611, 389);
+            this.tpRandom.TabIndex = 1;
+            this.tpRandom.Text = "Random";
+            this.tpRandom.UseVisualStyleBackColor = true;
             // 
             // cbRandom
             // 
@@ -466,19 +504,19 @@
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
             // 
-            // GeneratePass
+            // tpGeneratePass
             // 
-            this.GeneratePass.Controls.Add(this.tbPassword);
-            this.GeneratePass.Controls.Add(this.btnCreatePassword);
-            this.GeneratePass.Controls.Add(this.label1);
-            this.GeneratePass.Controls.Add(this.nudPassLength);
-            this.GeneratePass.Controls.Add(this.clbPassword);
-            this.GeneratePass.Location = new System.Drawing.Point(4, 29);
-            this.GeneratePass.Name = "GeneratePass";
-            this.GeneratePass.Size = new System.Drawing.Size(611, 389);
-            this.GeneratePass.TabIndex = 3;
-            this.GeneratePass.Text = "GeneratePass";
-            this.GeneratePass.UseVisualStyleBackColor = true;
+            this.tpGeneratePass.Controls.Add(this.tbPassword);
+            this.tpGeneratePass.Controls.Add(this.btnCreatePassword);
+            this.tpGeneratePass.Controls.Add(this.label1);
+            this.tpGeneratePass.Controls.Add(this.nudPassLength);
+            this.tpGeneratePass.Controls.Add(this.clbPassword);
+            this.tpGeneratePass.Location = new System.Drawing.Point(4, 29);
+            this.tpGeneratePass.Name = "tpGeneratePass";
+            this.tpGeneratePass.Size = new System.Drawing.Size(611, 389);
+            this.tpGeneratePass.TabIndex = 3;
+            this.tpGeneratePass.Text = "GeneratePass";
+            this.tpGeneratePass.UseVisualStyleBackColor = true;
             // 
             // tbPassword
             // 
@@ -559,17 +597,17 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.tpConverter.ResumeLayout(false);
+            this.tpConverter.PerformLayout();
             this.tpNotebook.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.NameHead.ResumeLayout(false);
-            this.NameHead.PerformLayout();
+            this.tpCounter.ResumeLayout(false);
+            this.tpCounter.PerformLayout();
+            this.tpRandom.ResumeLayout(false);
+            this.tpRandom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.GeneratePass.ResumeLayout(false);
-            this.GeneratePass.PerformLayout();
+            this.tpGeneratePass.ResumeLayout(false);
+            this.tpGeneratePass.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPassLength)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -584,8 +622,8 @@
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem tsmiAbout;
         private TabControl tabControl1;
-        private TabPage tabPage1;
-        private TabPage NameHead;
+        private TabPage tpCounter;
+        private TabPage tpRandom;
         private Button btnPlus;
         private Label lblCount;
         private Button btnMinus;
@@ -608,17 +646,20 @@
         private ToolStripMenuItem tsmiDownload;
         private TabPage tpNotebook;
         private RichTextBox rtbNotebook;
-        private TabPage GeneratePass;
+        private TabPage tpGeneratePass;
         private CheckedListBox clbPassword;
         private TextBox tbPassword;
         private Button btnCreatePassword;
         private Label label1;
         private NumericUpDown nudPassLength;
-        private TabPage tabPage2;
+        private TabPage tpConverter;
         private TextBox tbTo;
         private TextBox tbFrom;
         private Button btnConvert;
         private ComboBox cbTo;
         private ComboBox cbFrom;
+        private Button btnSwap;
+        private ComboBox cbMetric;
+        private Label lbMeasure;
     }
 }
