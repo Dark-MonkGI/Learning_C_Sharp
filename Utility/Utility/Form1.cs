@@ -5,11 +5,19 @@ namespace Utility
         int count = 0;
         Random rnd;
         char[] special_chars = new char[] {'%','*',')','?', '#','$', '^', '&', '~'};
-
+        Dictionary<string, double> metrica;
         public MainForm()
         {
             InitializeComponent();
             rnd = new Random();
+            metrica = new Dictionary<string, double>();
+            metrica.Add("mm", 1);
+            metrica.Add("cm", 10);
+            metrica.Add("dm", 100);
+            metrica.Add("m", 1000);
+            metrica.Add("km", 1000000);
+            metrica.Add("mile", 1609344);
+
         }
 
         private void tsmiExit_Click(object sender, EventArgs e)
@@ -158,6 +166,14 @@ namespace Utility
 
                 Clipboard.SetText(password);
             }
+        }
+
+        private void btnConvert_Click(object sender, EventArgs e)
+        {
+            double metricaFrom = metrica[cbFrom.Text];
+            double metricaTo = metrica[cbTo.Text];
+            double numberConvdert = Convert.ToDouble(tbFrom.Text);
+            tbTo.Text = (numberConvdert * metricaFrom / metricaTo).ToString();
         }
     }
 }
