@@ -93,12 +93,37 @@ namespace Utility
 
         private void tsmiSave_Click(object sender, EventArgs e)
         {
-            rtbNotebook.SaveFile("notepad.rtf");
+            try
+            {
+                rtbNotebook.SaveFile("notepad.rtf");
+            }
+            catch
+            {
+                MessageBox.Show("File save error");
+            }
+            
         }
 
         private void tsmiDownload_Click(object sender, EventArgs e)
         {
-            rtbNotebook.LoadFile("notepad.rtf");
+            LoadNotepad();
+        }
+
+        void LoadNotepad()
+        {
+            try
+            {
+                rtbNotebook.LoadFile("notepad.rtf");
+            }
+            catch
+            {
+                MessageBox.Show("File upload error");
+            }
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            LoadNotepad();
         }
     }
 }

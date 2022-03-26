@@ -111,7 +111,7 @@
             // 
             this.tsmiAddDate.Name = "tsmiAddDate";
             this.tsmiAddDate.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.tsmiAddDate.Size = new System.Drawing.Size(224, 26);
+            this.tsmiAddDate.Size = new System.Drawing.Size(211, 26);
             this.tsmiAddDate.Text = "Add Date";
             this.tsmiAddDate.Click += new System.EventHandler(this.tsmiAddDate_Click);
             // 
@@ -119,20 +119,20 @@
             // 
             this.tsmiAddTime.Name = "tsmiAddTime";
             this.tsmiAddTime.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.tsmiAddTime.Size = new System.Drawing.Size(224, 26);
+            this.tsmiAddTime.Size = new System.Drawing.Size(211, 26);
             this.tsmiAddTime.Text = "Add Time";
             this.tsmiAddTime.Click += new System.EventHandler(this.tsmiAddTime_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(208, 6);
             // 
             // tsmiSave
             // 
             this.tsmiSave.Name = "tsmiSave";
             this.tsmiSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.tsmiSave.Size = new System.Drawing.Size(224, 26);
+            this.tsmiSave.Size = new System.Drawing.Size(211, 26);
             this.tsmiSave.Text = "Save";
             this.tsmiSave.Click += new System.EventHandler(this.tsmiSave_Click);
             // 
@@ -140,7 +140,7 @@
             // 
             this.tsmiDownload.Name = "tsmiDownload";
             this.tsmiDownload.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.tsmiDownload.Size = new System.Drawing.Size(224, 26);
+            this.tsmiDownload.Size = new System.Drawing.Size(211, 26);
             this.tsmiDownload.Text = "Download";
             this.tsmiDownload.Click += new System.EventHandler(this.tsmiDownload_Click);
             // 
@@ -386,6 +386,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "My Utility";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
