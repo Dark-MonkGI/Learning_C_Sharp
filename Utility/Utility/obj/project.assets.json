@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dark_Monk\\Documents\\GitHub\\Learning_C_Sharp\\Utility\\First Utility\\Utility\\Utility.csproj",
+      "projectUniqueName": "C:\\Users\\Dark_Monk\\Documents\\GitHub\\Learning_C_Sharp\\Utility\\Utility\\Utility.csproj",
       "projectName": "Utility",
-      "projectPath": "C:\\Users\\Dark_Monk\\Documents\\GitHub\\Learning_C_Sharp\\Utility\\First Utility\\Utility\\Utility.csproj",
+      "projectPath": "C:\\Users\\Dark_Monk\\Documents\\GitHub\\Learning_C_Sharp\\Utility\\Utility\\Utility.csproj",
       "packagesPath": "C:\\Users\\Dark_Monk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dark_Monk\\Documents\\GitHub\\Learning_C_Sharp\\Utility\\First Utility\\Utility\\obj\\",
+      "outputPath": "C:\\Users\\Dark_Monk\\Documents\\GitHub\\Learning_C_Sharp\\Utility\\Utility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
