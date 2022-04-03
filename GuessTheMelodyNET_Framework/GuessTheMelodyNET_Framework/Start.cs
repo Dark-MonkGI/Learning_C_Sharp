@@ -34,5 +34,11 @@ namespace GuessTheMelodyNET_Framework
         {
             fGame.ShowDialog();
         }
+
+        private void fMain_Load(object sender, EventArgs e)
+        {
+            Victorina.ReadParametrs();
+            Victorina.ReadMusic();
+        }
     }
 }

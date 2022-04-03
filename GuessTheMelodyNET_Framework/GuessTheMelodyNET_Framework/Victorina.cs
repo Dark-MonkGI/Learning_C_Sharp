@@ -20,10 +20,18 @@ namespace GuessTheMelodyNET_Framework
 
         static public void ReadMusic()
         {
-            string[] MusicList = Directory.GetFiles(lastFolder, "*.mp3",
+            try
+            {
+                string[] MusicList = Directory.GetFiles(lastFolder, "*.mp3",
                     allDirectories ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly);
-            listWithMusic.Clear();
-            listWithMusic.AddRange(MusicList);
+                listWithMusic.Clear();
+                listWithMusic.AddRange(MusicList);
+            }
+            catch
+            {
+
+            }
+
         }
 
         static string regKeyName = "Software\\DarkMonk\\GuessMelody";
