@@ -16,3 +16,4 @@ C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelody\GuessTheMelo
 C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelody\GuessTheMelody\obj\Debug\net6.0-windows\GuessTheMelody.genruntimeconfig.cache
 C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelody\GuessTheMelody\obj\Debug\net6.0-windows\ref\GuessTheMelody.dll
 C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelody\GuessTheMelody\obj\Debug\net6.0-windows\GuessTheMelody.Properties.Resources.resources
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelody\GuessTheMelody\obj\Debug\net6.0-windows\GuessTheMelody.fParameters.resources
