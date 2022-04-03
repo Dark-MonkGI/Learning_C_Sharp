@@ -37,6 +37,8 @@ namespace GuessTheMelodyNET_Framework
                     cbSubfolders.Checked ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly);
                 lbListMusik.Items.Clear();
                 lbListMusik.Items.AddRange(MusicList);
+                Victorina.listWithMusic.Clear();
+                Victorina.listWithMusic.AddRange(MusicList);
             }
         }
     }

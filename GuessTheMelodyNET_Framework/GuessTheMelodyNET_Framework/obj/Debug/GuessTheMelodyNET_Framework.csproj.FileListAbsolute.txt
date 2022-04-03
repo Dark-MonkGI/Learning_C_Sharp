@@ -10,3 +10,9 @@ C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework
 C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\obj\Debug\GuessTheMelodyNET_Framework.exe
 C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\obj\Debug\GuessTheMelodyNET_Framework.pdb
 C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\obj\Debug\GuessTheMelodyNET_Framework.fParameters.resources
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\bin\Debug\Interop.WMPLib.dll
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\obj\Debug\Interop.WMPLib.dll
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\obj\Debug\GuessTheMelodyNET_Framework.csproj.ResolveComReference.cache
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\obj\Debug\GuessTheMelodyNET_Framework.fGame.resources

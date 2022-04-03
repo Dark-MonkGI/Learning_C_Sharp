@@ -13,6 +13,7 @@ namespace GuessTheMelodyNET_Framework
     public partial class fMain : Form
     {
         fParameters fParameters = new fParameters();
+        fGame fGame = new fGame();  
 
         public fMain()
         {
@@ -31,7 +32,7 @@ namespace GuessTheMelodyNET_Framework
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-
+            fGame.ShowDialog();
         }
     }
 }
