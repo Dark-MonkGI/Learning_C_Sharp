@@ -48,10 +48,10 @@
             // wmplayer
             // 
             this.wmplayer.Enabled = true;
-            this.wmplayer.Location = new System.Drawing.Point(12, 26);
+            this.wmplayer.Location = new System.Drawing.Point(12, 12);
             this.wmplayer.Name = "wmplayer";
             this.wmplayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmplayer.OcxState")));
-            this.wmplayer.Size = new System.Drawing.Size(280, 49);
+            this.wmplayer.Size = new System.Drawing.Size(212, 36);
             this.wmplayer.TabIndex = 0;
             this.wmplayer.Visible = false;
             // 

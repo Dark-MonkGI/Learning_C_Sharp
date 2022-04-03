@@ -20,6 +20,7 @@ namespace GuessTheMelodyNET_Framework
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+            Victorina.WriteParametrs();
             this.Hide();
         }
 
