@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fGame));
             this.btnNext = new System.Windows.Forms.Button();
             this.wmplayer = new AxWMPLib.AxWindowsMediaPlayer();
@@ -37,6 +38,10 @@
             this.lbPointsTwo = new System.Windows.Forms.Label();
             this.lbPlayerOne = new System.Windows.Forms.Label();
             this.lbPointsOne = new System.Windows.Forms.Label();
+            this.lblCountTrack = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.wmplayer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,12 +69,13 @@
             // btnContinue
             // 
             this.btnContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnContinue.Location = new System.Drawing.Point(642, 368);
+            this.btnContinue.Location = new System.Drawing.Point(631, 368);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(133, 53);
             this.btnContinue.TabIndex = 2;
-            this.btnContinue.Text = "Continue";
+            this.btnContinue.Text = "Continue eee";
             this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // btnPause
             // 
@@ -80,6 +86,7 @@
             this.btnPause.TabIndex = 3;
             this.btnPause.Text = "Pause";
             this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
             // lbPlayerTwo
             // 
@@ -121,6 +128,39 @@
             this.lbPointsOne.TabIndex = 7;
             this.lbPointsOne.Text = "0";
             // 
+            // lblCountTrack
+            // 
+            this.lblCountTrack.AutoSize = true;
+            this.lblCountTrack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCountTrack.Location = new System.Drawing.Point(464, 396);
+            this.lblCountTrack.Name = "lblCountTrack";
+            this.lblCountTrack.Size = new System.Drawing.Size(24, 25);
+            this.lblCountTrack.TabIndex = 8;
+            this.lblCountTrack.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(309, 396);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 25);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Track Count:";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(302, 305);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(186, 23);
+            this.progressBar1.TabIndex = 10;
+            this.progressBar1.Value = 50;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // fGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -128,6 +168,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCountTrack);
             this.Controls.Add(this.lbPointsOne);
             this.Controls.Add(this.lbPlayerOne);
             this.Controls.Add(this.lbPointsTwo);
@@ -139,6 +182,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fGame";
             this.Text = "Game";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fGame_FormClosed);
+            this.Load += new System.EventHandler(this.fGame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.wmplayer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -155,5 +200,9 @@
         private System.Windows.Forms.Label lbPointsTwo;
         private System.Windows.Forms.Label lbPlayerOne;
         private System.Windows.Forms.Label lbPointsOne;
+        private System.Windows.Forms.Label lblCountTrack;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
