@@ -66,6 +66,7 @@
             this.wmplayer.Size = new System.Drawing.Size(212, 36);
             this.wmplayer.TabIndex = 0;
             this.wmplayer.Visible = false;
+            this.wmplayer.OpenStateChange += new AxWMPLib._WMPOCXEvents_OpenStateChangeEventHandler(this.wmplayer_OpenStateChange);
             // 
             // btnContinue
             // 
