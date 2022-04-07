@@ -52,11 +52,11 @@
     <Compile Include="fMessag.Designer.cs">
       <DependentUpon>fMessag.cs</DependentUpon>
     </Compile>
-    <Compile Include="Game.cs">
+    <Compile Include="fGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Game.Designer.cs">
-      <DependentUpon>Game.cs</DependentUpon>
+    <Compile Include="fGame.Designer.cs">
+      <DependentUpon>fGame.cs</DependentUpon>
     </Compile>
     <Compile Include="Start.cs">
       <SubType>Form</SubType>
@@ -76,8 +76,8 @@
     <EmbeddedResource Include="fMessag.resx">
       <DependentUpon>fMessag.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Game.resx">
-      <DependentUpon>Game.cs</DependentUpon>
+    <EmbeddedResource Include="fGame.resx">
+      <DependentUpon>fGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
