@@ -212,13 +212,13 @@
         private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.Button btnPause;
         private System.Windows.Forms.Label lbPlayerTwo;
-        private System.Windows.Forms.Label lbPointsTwo;
         private System.Windows.Forms.Label lbPlayerOne;
-        private System.Windows.Forms.Label lbPointsOne;
         private System.Windows.Forms.Label lblCountTrack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblMusicDuration;
+        public System.Windows.Forms.Label lbPointsTwo;
+        public System.Windows.Forms.Label lbPointsOne;
     }
 }

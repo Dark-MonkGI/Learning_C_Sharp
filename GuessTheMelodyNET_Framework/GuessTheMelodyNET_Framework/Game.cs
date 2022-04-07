@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace GuessTheMelodyNET_Framework
 {
@@ -72,6 +73,8 @@ namespace GuessTheMelodyNET_Framework
                 GamePause();
                 fMessag messege = new fMessag();
                 messege.lblNamePlayer.Text = "Player 1";
+                SoundPlayer soundone = new SoundPlayer("Resources\\Sound_Player_1.wav");
+                soundone.PlaySync();
                 if (messege.ShowDialog() == DialogResult.Yes)
                 {
                     lbPointsOne.Text = Convert.ToString((Convert.ToInt32(lbPointsOne.Text)) + 1);
@@ -92,6 +95,8 @@ namespace GuessTheMelodyNET_Framework
                 GamePause();
                 fMessag messege = new fMessag();
                 messege.lblNamePlayer.Text = "Player 2";
+                SoundPlayer soundtwo = new SoundPlayer("Resources\\Sound_Player_2.wav");
+                soundtwo.PlaySync();
                 if (messege.ShowDialog() == DialogResult.Yes)
                 {
                     lbPointsTwo.Text = Convert.ToString((Convert.ToInt32(lbPointsTwo.Text)) + 1);

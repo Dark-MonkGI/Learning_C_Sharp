@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMessag));
             this.lblNamePlayer = new System.Windows.Forms.Label();
             this.btnYes = new System.Windows.Forms.Button();
             this.btnNo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblTimeForAnswer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNamePlayer
@@ -71,23 +74,41 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Uighur", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(184, 146);
+            this.label1.Location = new System.Drawing.Point(184, 133);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(307, 61);
             this.label1.TabIndex = 3;
             this.label1.Text = "What is your answer?";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblTimeForAnswer
+            // 
+            this.lblTimeForAnswer.AutoSize = true;
+            this.lblTimeForAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblTimeForAnswer.Location = new System.Drawing.Point(326, 194);
+            this.lblTimeForAnswer.Name = "lblTimeForAnswer";
+            this.lblTimeForAnswer.Size = new System.Drawing.Size(29, 20);
+            this.lblTimeForAnswer.TabIndex = 4;
+            this.lblTimeForAnswer.Text = "10";
             // 
             // fMessag
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 428);
+            this.Controls.Add(this.lblTimeForAnswer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.btnYes);
             this.Controls.Add(this.lblNamePlayer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fMessag";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fMessag_FormClosed);
+            this.Load += new System.EventHandler(this.fMessag_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,5 +120,7 @@
         private System.Windows.Forms.Button btnYes;
         private System.Windows.Forms.Button btnNo;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblTimeForAnswer;
     }
 }
