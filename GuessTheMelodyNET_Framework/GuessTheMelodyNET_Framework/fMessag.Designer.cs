@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblTimeForAnswer = new System.Windows.Forms.Label();
+            this.lblShowAnswer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNamePlayer
@@ -95,11 +96,23 @@
             this.lblTimeForAnswer.TabIndex = 4;
             this.lblTimeForAnswer.Text = "10";
             // 
+            // lblShowAnswer
+            // 
+            this.lblShowAnswer.AutoSize = true;
+            this.lblShowAnswer.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowAnswer.Location = new System.Drawing.Point(271, 384);
+            this.lblShowAnswer.Name = "lblShowAnswer";
+            this.lblShowAnswer.Size = new System.Drawing.Size(122, 23);
+            this.lblShowAnswer.TabIndex = 5;
+            this.lblShowAnswer.Text = "Show answer";
+            this.lblShowAnswer.Click += new System.EventHandler(this.lblShowAnswer_Click);
+            // 
             // fMessag
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 428);
+            this.Controls.Add(this.lblShowAnswer);
             this.Controls.Add(this.lblTimeForAnswer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNo);
@@ -122,5 +135,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblTimeForAnswer;
+        private System.Windows.Forms.Label lblShowAnswer;
     }
 }

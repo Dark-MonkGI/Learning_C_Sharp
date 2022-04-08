@@ -109,6 +109,7 @@
             this.lbPointsTwo.Size = new System.Drawing.Size(31, 32);
             this.lbPointsTwo.TabIndex = 5;
             this.lbPointsTwo.Text = "0";
+            this.lbPointsTwo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbPointsOne_MouseClick);
             // 
             // lbPlayerOne
             // 
@@ -129,6 +130,7 @@
             this.lbPointsOne.Size = new System.Drawing.Size(31, 32);
             this.lbPointsOne.TabIndex = 7;
             this.lbPointsOne.Text = "0";
+            this.lbPointsOne.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbPointsOne_MouseClick);
             // 
             // lblCountTrack
             // 
