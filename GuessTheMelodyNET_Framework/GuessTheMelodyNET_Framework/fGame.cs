@@ -139,7 +139,8 @@ namespace GuessTheMelodyNET_Framework
                 MusicDuration = Victorina.MusicDuration;
                 int RandomNamber = rnd.Next(0, Victorina.listWithMusic.Count);
                 wmplayer.URL = Victorina.listWithMusic[RandomNamber];
-                Victorina.answer = System.IO.Path.GetFileNameWithoutExtension(wmplayer.URL); 
+                //Victorina.answer = System.IO.Path.GetFileNameWithoutExtension(wmplayer.URL); 
+                Victorina.answer = wmplayer.URL;
                 wmplayer.Ctlcontrols.play(); //if not autoplay 
                 Victorina.listWithMusic.RemoveAt(RandomNamber);
                 lblCountTrack.Text = Victorina.listWithMusic.Count.ToString();

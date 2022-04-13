@@ -20,3 +20,5 @@ C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework
 C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\bin\Debug\Resources\Sound.wav
 C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\bin\Debug\Resources\Sound_Player_2.wav
 C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\bin\Debug\Resources\Sound_Player_1.wav
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\bin\Debug\taglib-sharp.dll
+C:\Users\Dark_Monk\Documents\GitHub\Learning_C_Sharp\GuessTheMelodyNET_Framework\GuessTheMelodyNET_Framework\obj\Debug\GuessTheMelodyNET_Framework.csproj.CopyComplete
