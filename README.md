@@ -3,4 +3,4 @@
 ![logo](https://github.com/Dark-MonkGI/Learning_C_Sharp/blob/main/img/C%23%20certificate.%20Fast%20start.%20GeekBrains%20-%20educational%20portal.jpg?raw=true)
 ![logo](https://github.com/Dark-MonkGI/Learning_C_Sharp/blob/main/img/OOP%20Foundation%20Certificate.%20GeekBrains%20-%20educational%20portal.jpg?raw=true)
 ![logo](https://github.com/Dark-MonkGI/Learning_C_Sharp/blob/main/img/Certificate%20C%23.%20Mini-Programms.%20GeekBrains.jpg?raw=true)
-
+![logo](https://github.com/Dark-MonkGI/Learning_C_Sharp/blob/main/img/Certificate%20C%23.%20First%20Steps.%20GeekBrains.jpg)
